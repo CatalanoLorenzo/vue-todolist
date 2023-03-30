@@ -42,6 +42,7 @@ const app = createApp({
    },
    addElement(){
     this.elementList.unshift( { ...this.elementAdd } )
+    this.elementAdd.text = ''
    },
    invertdone(index){
     this.elementList[index].done = !this.elementList[index].done 
