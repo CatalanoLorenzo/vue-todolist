@@ -41,7 +41,7 @@ const app = createApp({
     this.elementList.splice(index,1)
    },
    addElement(){
-    this.elementList.unshift(this.elementAdd)
+    this.elementList.unshift( { ...this.elementAdd } )
    },
    invertdone(index){
     this.elementList[index].done = !this.elementList[index].done 
