@@ -19,6 +19,10 @@ const { createApp } = Vue
 const app = createApp({
   data() {
     return {
+        elementAdd:{
+            text: '',
+            done: false
+        },
         elementList:[
             {
                 text:'fare milestone1',
@@ -35,6 +39,9 @@ const app = createApp({
   methods: {
    removeElement(index){
     this.elementList.splice(index,1)
+   },
+   addElement(){
+    this.elementList.unshift(this.elementAdd)
    }
     }
   

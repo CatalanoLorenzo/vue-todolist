@@ -21,8 +21,8 @@
     </header>
     <main>
         <div class="container_input">
-            <input type="text">
-            <button>aggiungi</button>
+            <input type="text" v-model="elementAdd.text">
+            <button @click="addElement">aggiungi</button>
         </div>
         <div class="container_list">
             <ul>
