@@ -27,7 +27,7 @@
         <div class="container_list">
             <ul>
                 <li v-for="(element,index) in elementList">
-                    <span :class="element.done ? 'text-decoration-line-through' : ''">{{element.text}}</span>
+                    <span :class="element.done ? 'text-decoration-line-through' : ''" @click="invertdone(index)">{{element.text}}</span>
                     <span>
                         <i class="fa-solid fa-square-xmark mx-2" @click="removeElement(index)"></i>
                     </span>
