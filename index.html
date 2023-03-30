@@ -29,7 +29,7 @@
                 <li v-for="(element,index) in elementList">
                     <span :class="element.done ? 'text-decoration-line-through' : ''">{{element.text}}</span>
                     <span>
-                        <i class="fa-solid fa-square-xmark mx-2"></i>
+                        <i class="fa-solid fa-square-xmark mx-2" @click="removeElement(index)"></i>
                     </span>
                 </li>
             </ul>

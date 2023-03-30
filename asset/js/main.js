@@ -33,7 +33,9 @@ const app = createApp({
     }
   },
   methods: {
-   
+   removeElement(index){
+    this.elementList.splice(index,1)
+   }
     }
   
 })
