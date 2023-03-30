@@ -21,7 +21,7 @@
     </header>
     <main>
         <div class="container_input">
-            <input type="text" v-model="elementAdd.text">
+            <input type="text" v-model="elementAdd.text" @keyup.enter="addElement">
             <button @click="addElement">aggiungi</button>
         </div>
         <div class="container_list">
